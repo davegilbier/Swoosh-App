@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beginner_baller_bg"
+    tools:context="com.example.davegilbier.swoosh.Skills">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="133dp"
+        android:id="@+id/logo"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_am_a"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textView"
+        >
+
+        <Button
+            android:layout_height="50dp"
+            android:layout_width="130dp"
+            android:gravity="center"
+            android:text="@string/beginner"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_boarder"
+            android:alpha="0.5"
+            android:id="@+id/beginner"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="20dp"
+            android:onClick="gobeginner"/>
+        <Button
+            android:layout_height="50dp"
+            android:layout_width="130dp"
+            android:gravity="center"
+            android:text="@string/baller"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_boarder"
+            android:alpha="0.5"
+            android:id="@+id/baller"
+            android:layout_marginTop="11dp"
+            android:onClick="goballer"/>
+    </GridLayout>
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_boarder"
+        android:alpha="0.5"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/finbtn"
+        android:onClick="gofinish"/>
+
+
+
+</RelativeLayout>

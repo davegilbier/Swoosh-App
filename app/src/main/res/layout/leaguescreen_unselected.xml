@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desired_league_bg"
+    tools:context="com.example.davegilbier.swoosh.LeaguescreenUnselectedActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="133dp"
+        android:id="@+id/logo"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desired_league"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/logo"
+        android:layout_alignRight="@+id/logo"
+        android:layout_alignEnd="@+id/logo" />
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:text="@string/mens"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_boarder"
+        android:alpha="0.5"
+        android:layout_marginTop="15dp"
+        android:id="@+id/mens"
+        android:onClick="gomens"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/womens"
+        android:layout_alignStart="@+id/womens" />
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:text="@string/womens"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_boarder"
+        android:alpha="0.5"
+        android:id="@+id/womens"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/mens"
+        android:layout_centerHorizontal="true"
+        android:onClick="gowomens"/>
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:text="@string/co_ed"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_boarder"
+        android:alpha="0.5"
+        android:layout_marginTop="58dp"
+        android:layout_alignTop="@+id/womens"
+        android:layout_alignLeft="@+id/womens"
+        android:layout_alignStart="@+id/womens"
+        android:id="@+id/coed"
+        android:onClick="gocoed"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/replyHolder"
+        android:text="I am a:"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:textSize="15sp"
+        android:layout_below="@+id/coed"
+        android:layout_alignLeft="@+id/reply"
+        android:layout_alignStart="@+id/reply" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+       android:id="@+id/reply"
+        android:inputType="text"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_below="@id/replyHolder"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/next"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:id="@+id/next"
+        android:background="@drawable/button_boarder"
+        android:alpha="0.2"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/coed"
+        android:layout_alignStart="@+id/coed"
+        android:onClick="nextNow"
+        android:enabled="true"
+        />
+
+
+
+
+
+</RelativeLayout>
